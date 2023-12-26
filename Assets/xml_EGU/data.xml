@@ -1,0 +1,573 @@
+<card-stack location.name="table" location.x="46.38353986992169" location.y="1640.760972246955" posZ="0" rotate="0" zindex="239" owner="" isShowTotal="true">
+  <data name="card-stack">
+    <data name="image">
+      <data type="image" name="imageIdentifier"></data>
+    </data>
+    <data name="common">
+      <data name="name">EGU</data>
+    </data>
+    <data name="detail"></data>
+  </data>
+  <node name="cardRoot">
+    <card location.name="table" location.x="46.38353986992169" location.y="1640.760972246955" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">cc024eee85332ac95774350b2682220d2ab31c9aac46fd727870751d18f77343</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">78fa65924a5966e23ea751ed90366319a0231902b018c2b7a4580137c70c1a37</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">7874bfe8b6fc8483ca38d494fbe998dd08304b2590de5e7ad21b3bac43fde2b8</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">6fa551b5e8ab96e04bdc748d8ce95763ae9193647ab70aa12f6acf2a07c8a68d</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">6fa551b5e8ab96e04bdc748d8ce95763ae9193647ab70aa12f6acf2a07c8a68d</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">6fa551b5e8ab96e04bdc748d8ce95763ae9193647ab70aa12f6acf2a07c8a68d</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">1268a0c4381015fa874b5dee7ae755f87971660ac02a1a80a0ae43ea3713002a</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">1268a0c4381015fa874b5dee7ae755f87971660ac02a1a80a0ae43ea3713002a</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">1268a0c4381015fa874b5dee7ae755f87971660ac02a1a80a0ae43ea3713002a</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">0f491e1c459aa62ac7bb869aa805205b2d799d174b3604bd15075594c92b06d6</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">0f491e1c459aa62ac7bb869aa805205b2d799d174b3604bd15075594c92b06d6</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">073f6c2b6b614a3aec9108fbc6dee78d24d3eb03f69151289d862860915abf67</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">073f6c2b6b614a3aec9108fbc6dee78d24d3eb03f69151289d862860915abf67</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">073f6c2b6b614a3aec9108fbc6dee78d24d3eb03f69151289d862860915abf67</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">80bfcf64dac2e9cf9c0b8dd8809e891bd8afed19bc52c33665a890985320e41e</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">80bfcf64dac2e9cf9c0b8dd8809e891bd8afed19bc52c33665a890985320e41e</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">80bfcf64dac2e9cf9c0b8dd8809e891bd8afed19bc52c33665a890985320e41e</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">0e2a77bcbb75398088160b26616ae55177e3b2bbed86d593e17e705be1cafcfb</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">0e2a77bcbb75398088160b26616ae55177e3b2bbed86d593e17e705be1cafcfb</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">6dc934d1a5e82c02502d38f8f0bec4498ec6d9bdfae1f38a5d050b1194207056</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">6dc934d1a5e82c02502d38f8f0bec4498ec6d9bdfae1f38a5d050b1194207056</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">c05d8be5c603e85dd4c228233e52715108c91bba1db0d341143a3fd6eb2a8bf9</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">c05d8be5c603e85dd4c228233e52715108c91bba1db0d341143a3fd6eb2a8bf9</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">c05d8be5c603e85dd4c228233e52715108c91bba1db0d341143a3fd6eb2a8bf9</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">5f2bcceb8dbb28184a8be6aab00a6077f6e867d6adbec3aaad5b8038bbd6c4d4</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">5f2bcceb8dbb28184a8be6aab00a6077f6e867d6adbec3aaad5b8038bbd6c4d4</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">5f2bcceb8dbb28184a8be6aab00a6077f6e867d6adbec3aaad5b8038bbd6c4d4</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">add58d4e673832dee168ee7280d0c11cee4610d2dbc1005606806de99e3122c4</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">add58d4e673832dee168ee7280d0c11cee4610d2dbc1005606806de99e3122c4</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">add58d4e673832dee168ee7280d0c11cee4610d2dbc1005606806de99e3122c4</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">db6d26f8f610781cf64043e0efa4cce393f0a00a21a2e9ac5965ce88dbf7dc43</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">db6d26f8f610781cf64043e0efa4cce393f0a00a21a2e9ac5965ce88dbf7dc43</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">db6d26f8f610781cf64043e0efa4cce393f0a00a21a2e9ac5965ce88dbf7dc43</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">5f6f3cf3a8506d41f8e07d37df4f0f779ad0f8e04f37b3e677e4f53c9c883187</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">5f6f3cf3a8506d41f8e07d37df4f0f779ad0f8e04f37b3e677e4f53c9c883187</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">5f6f3cf3a8506d41f8e07d37df4f0f779ad0f8e04f37b3e677e4f53c9c883187</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">4f9fe40260618ded95367fcc91ad2e84f5d4e52a13bf0848ae45cd2b9e9b4d0c</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">4f9fe40260618ded95367fcc91ad2e84f5d4e52a13bf0848ae45cd2b9e9b4d0c</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="688.1154279422004" location.y="1227.6482285525422" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">4f9fe40260618ded95367fcc91ad2e84f5d4e52a13bf0848ae45cd2b9e9b4d0c</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+    <card location.name="table" location.x="403.3436103272181" location.y="1205.2473934493016" posZ="0" state="0" rotate="0" owner="" zindex="0">
+      <data name="card">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="front">86b5aa32cca929f1b01c1fd169e9ebea361607baa786f783221c3f40ce23c3ca</data>
+          <data type="image" name="back">a01f8568ef29a115e17587077cc86bf195f5b8e971a5ebec6befb01397a77ca1</data>
+        </data>
+        <data name="common">
+          <data name="name">カード</data>
+          <data name="size">2</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </card>
+  </node>
+</card-stack>
