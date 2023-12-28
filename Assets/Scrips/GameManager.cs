@@ -51,8 +51,8 @@ public class GameManager : MonoBehaviour
         uiManager.HideResultPanel();
 
         // プレイヤーの初期化
-        player.Init(new List<int> {0, 1, 4, 5, 6, 7, 8, 9});
-        enemy.Init(new List<int> {0, 1, 4, 5, 6, 7, 8, 9});
+        player.Init(new List<int> {0, 1, 2, 3, 4, 5, 8, 9});
+        enemy.Init(new List<int> {0, 1, 2, 3, 4, 5, 8, 9});
 
         // ヒーローの初期体力
         uiManager.ShowHeroHp(player.heroHp, enemy.heroHp);

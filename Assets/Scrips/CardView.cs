@@ -23,7 +23,7 @@ public class CardView : MonoBehaviour
         iconImage.sprite = cardModel.icon;
         maskPanel.SetActive(!cardModel.isPlayerCard);
 
-        // 基本アビリティの確認（クイック）
+        // 基本アビリティの確認（ガーディアン）
         if (cardModel.isBaseAbility(BASE_ABILITY.GUARDIAN))
         {
             guardianPanel.SetActive(true);
