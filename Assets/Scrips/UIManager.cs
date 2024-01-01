@@ -9,7 +9,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] Text resultText;         
     [SerializeField] Text playerHeroHpText;
     [SerializeField] Text enemyHeroHpText;
-    [SerializeField] Text playerManaCostText;
+    [SerializeField] Slider playerBaseManaCost;
+    [SerializeField] Slider playerNowManaCost;
+    [SerializeField] Text playerBaseManaCostText;
+    [SerializeField] Text playerNowManaCostText;
     [SerializeField] Text enemyManaCostText;
     [SerializeField] GameObject trunEndButton;
     [SerializeField] Text timeCountText;
@@ -30,9 +33,12 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void ShowManaCost(int playerManaCost, int enemyManaCost)
+    public void ShowManaCost(int playerBaseManaCost, int playerNowManaCost, int enemyManaCost)
     {
-        playerManaCostText.text = playerManaCost.ToString();
+        this.playerBaseManaCost.value = playerBaseManaCost;
+        this.playerNowManaCost.value = playerNowManaCost;
+        playerBaseManaCostText.text = playerBaseManaCost.ToString();
+        playerNowManaCostText.text = playerNowManaCost.ToString();
         enemyManaCostText.text = enemyManaCost.ToString();   
     }
 

@@ -16,8 +16,11 @@ public class DropPlace : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
+        Debug.Log("DropPlace:OnDrop");
+
         if (type == TYPE.HAND)
         {
+            Debug.Log("DropPlace:OnDrop + return");
             return;
         }
 
@@ -33,7 +36,12 @@ public class DropPlace : MonoBehaviour, IDropHandler
             // スペルカードならドロップしない
             if (card.IsSpell)
             {
+                Debug.Log("card.IsSpell:" + card.IsSpell.ToString());
                 return;
+            }
+            else
+            {
+                Debug.Log("card.IsSpell:" + card.IsSpell.ToString());
             }
             // 移動先を移動元に設定
             card.movement.defaultParent = this.transform;

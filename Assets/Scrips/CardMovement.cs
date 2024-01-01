@@ -25,11 +25,12 @@ public class CardMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
     // ドラッグした時
     public void OnBeginDrag(PointerEventData eventData)
     {
+        Debug.Log("OnBeginDrag");
         // カードコストとPlayerコストを比較
         CardController card = GetComponent<CardController>();
         if (GameManager.instance.isPlayerTurn && !card.model.isFieldCard && card.model.cost <= GameManager.instance.player.manaCost)
         {
-            // フィールドカード かつ Playerコスト以下のカード
+            // 手札 かつ Playerコスト以下のカード
             isDragable = true;
         }
         else if (GameManager.instance.isPlayerTurn && card.model.isFieldCard && card.model.canAttack)
@@ -43,6 +44,8 @@ public class CardMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
         }
         if (!isDragable)
         {
+            // ドラッグ情報を空にする
+            eventData.pointerDrag = null;
             return;
         }
 

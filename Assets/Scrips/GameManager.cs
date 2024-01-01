@@ -51,14 +51,14 @@ public class GameManager : MonoBehaviour
         uiManager.HideResultPanel();
 
         // プレイヤーの初期化
-        player.Init(new List<int> {0, 1, 2, 3, 4, 5, 8, 9});
+        player.Init(new List<int> {0, 1, 5, 8, 9, 4, 5, 8, 9});
         enemy.Init(new List<int> {0, 1, 2, 3, 4, 5, 8, 9});
 
         // ヒーローの初期体力
         uiManager.ShowHeroHp(player.heroHp, enemy.heroHp);
 
         // Costの初期値
-        uiManager.ShowManaCost(player.manaCost, enemy.manaCost);
+        uiManager.ShowManaCost(player.baseManaCost, player.manaCost, enemy.manaCost);
 
         // 制限時間
         timeCount = 30;
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
         {
             enemy.manaCost -= cost;
         }
-        uiManager.ShowManaCost(player.manaCost, enemy.manaCost);
+        uiManager.ShowManaCost(player.baseManaCost, player.manaCost, enemy.manaCost);
     }
 
     // 試合再開
@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
     // 手札を配る
     void SettingInitHand()
     {
-        for(int i = 0; i < 5; i++) {
+        for(int i = 0; i < 3; i++) {
             GiveCardToHand(player.deck, playerHandTransform);
             GiveCardToHand(enemy.deck, enemyHandTransform);
         }
@@ -262,7 +262,7 @@ public class GameManager : MonoBehaviour
             enemy.incrementManaCost();
             GiveCardToHand(enemy.deck, enemyHandTransform);
         }
-        uiManager.ShowManaCost(player.baseManaCost, enemy.manaCost);
+        uiManager.ShowManaCost(player.baseManaCost, player.manaCost, enemy.manaCost);
         TurnCalc();
     }
 

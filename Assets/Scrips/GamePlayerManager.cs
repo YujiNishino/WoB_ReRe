@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CONST;
 
 public class GamePlayerManager : MonoBehaviour
 {
@@ -16,15 +17,18 @@ public class GamePlayerManager : MonoBehaviour
     public void Init(List<int> cardDeck)
     {
         deck = cardDeck;
-        heroHp = 20;
-        manaCost = 10;
-        baseManaCost = 10;
+        heroHp = CONST.INITIALIZE.PLAYER_HP;
+        manaCost = CONST.INITIALIZE.HAVE_MEMORY;
+        baseManaCost = CONST.INITIALIZE.BASE_MEMORY;
     }
 
     public void incrementManaCost()
     {
-        baseManaCost++;
-        manaCost = baseManaCost;
+        if (baseManaCost < CONST.MAX_MIN.MAX_COST) 
+        {
+            baseManaCost++;
+            manaCost = baseManaCost;
+        }
     }
 
 }

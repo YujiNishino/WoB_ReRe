@@ -9,6 +9,8 @@ public class SpellDropManager : MonoBehaviour, IDropHandler
 {
     public void OnDrop(PointerEventData eventData)
     { 
+        Debug.Log("SpellDropManager:OnDrop");
+
         // ドラッグ中のカードを取得（spellCard）
         CardController spellCard = eventData.pointerDrag.GetComponent<CardController>();
         // ドロップ先のカードを取得（target）
@@ -17,6 +19,7 @@ public class SpellDropManager : MonoBehaviour, IDropHandler
         if (spellCard == null)
         {
             // カードを取得できていない
+            Debug.Log("SpellDropManager:OnDrop + return");
             return;
         }
         if (spellCard.CanUseSpell())
