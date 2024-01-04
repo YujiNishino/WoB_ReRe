@@ -69,9 +69,9 @@ public class CardController : MonoBehaviour
     /// <summary>
     /// フィールドへカードを出した（マナ減算、基本アビリティ）
     /// </summary>
-    /// <param name="isPlayer"></param>
     public void OnFiled()
     {
+        Debug.Log("CardController_OnFiled()");
         // コストの減算
         gameManager.ReduceManaCost(model.cost, model.isPlayerCard);
         // フィールドカードに設定

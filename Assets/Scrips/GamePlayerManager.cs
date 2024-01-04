@@ -27,8 +27,8 @@ public class GamePlayerManager : MonoBehaviour
         if (baseManaCost < CONST.MAX_MIN.MAX_COST) 
         {
             baseManaCost++;
-            manaCost = baseManaCost;
         }
+        manaCost = baseManaCost;
     }
 
 }

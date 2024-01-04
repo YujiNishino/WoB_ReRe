@@ -11,9 +11,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] Text enemyHeroHpText;
     [SerializeField] Slider playerBaseManaCost;
     [SerializeField] Slider playerNowManaCost;
-    [SerializeField] Text playerBaseManaCostText;
-    [SerializeField] Text playerNowManaCostText;
-    [SerializeField] Text enemyManaCostText;
+    [SerializeField] Text playerCostText;
+    [SerializeField] Text enemyCostText;    
     [SerializeField] GameObject trunEndButton;
     [SerializeField] Text timeCountText;
     
@@ -33,13 +32,12 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void ShowManaCost(int playerBaseManaCost, int playerNowManaCost, int enemyManaCost)
+    public void ShowManaCost(int playerBaseManaCost, int playerNowManaCost, int enemyBaseManaCost, int enemyNowManaCost)
     {
         this.playerBaseManaCost.value = playerBaseManaCost;
         this.playerNowManaCost.value = playerNowManaCost;
-        playerBaseManaCostText.text = playerBaseManaCost.ToString();
-        playerNowManaCostText.text = playerNowManaCost.ToString();
-        enemyManaCostText.text = enemyManaCost.ToString();   
+        playerCostText.text = playerNowManaCost.ToString() + "/" + playerBaseManaCost.ToString();
+        enemyCostText.text = enemyNowManaCost.ToString() + "/" + enemyBaseManaCost.ToString();
     }
 
     // HeroHPの表示更新

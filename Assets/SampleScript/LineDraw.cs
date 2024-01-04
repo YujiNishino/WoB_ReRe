@@ -50,7 +50,7 @@ public class LineDraw : MonoBehaviour
         lineRenderer.positionCount = posCount;
         lineRenderer.SetPosition(posCount - 1, pos);
     }
-
+    
     /// <summary>
     /// 描画精度のチェック
     /// </summary>

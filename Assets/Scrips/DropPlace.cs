@@ -16,41 +16,43 @@ public class DropPlace : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("DropPlace:OnDrop");
+        Debug.Log("DropPlace_OnDrop()");
 
         if (type == TYPE.HAND)
         {
-            Debug.Log("DropPlace:OnDrop + return");
+            Debug.Log("DropPlace_OnDrop()_if (type == TYPE.HAND)_return");
             return;
         }
 
         // ドロップされたカードを取得（eventDataから取得）
-        CardController card = eventData.pointerDrag.GetComponent<CardController>();
-        if(card != null) 
+        CardController dragCard = eventData.pointerDrag.GetComponent<CardController>();
+        if(dragCard != null) 
         {
             // 移動できないならスルー
-            if (!card.movement.isDragable)
+            if (!dragCard.movement.isDragable)
             {
                 return;
             }
             // スペルカードならドロップしない
-            if (card.IsSpell)
+            if (dragCard.IsSpell)
             {
-                Debug.Log("card.IsSpell:" + card.IsSpell.ToString());
+                Debug.Log("card.IsSpell:" + dragCard.IsSpell.ToString());
                 return;
             }
             else
             {
-                Debug.Log("card.IsSpell:" + card.IsSpell.ToString());
+                Debug.Log("card.IsSpell:" + dragCard.IsSpell.ToString());
             }
             // 移動先を移動元に設定
-            card.movement.defaultParent = this.transform;
+            dragCard.movement.defaultParent = this.transform;
             // すでにフィールドカードならスルー
-            if (card.model.isFieldCard)
+            if (dragCard.model.isFieldCard)
             {
+                Debug.Log("DropPlace_OnDrop()_if (dragCard.model.isFieldCard)_return");
+                dragCard.movement.isDragable = false;
                 return;
             }
-            card.OnFiled();
+            dragCard.OnFiled();
         }
     }
 }
