@@ -19,7 +19,7 @@ namespace CONST
         /// <summary>
         /// 初期コスト（未使用）
         /// </summary>
-        public static int HAVE_MEMORY = 0;
+        public static int HAVE_MEMORY = 1;
         /// <summary>
         /// 初期カード枚数（先攻）
         /// </summary>

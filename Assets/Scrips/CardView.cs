@@ -9,6 +9,7 @@ public class CardView : MonoBehaviour
     [SerializeField] Text hpText;
     [SerializeField] Text atText;
     [SerializeField] Text costText;
+    [SerializeField] Text skillText;
     [SerializeField] Image iconImage;
     [SerializeField] GameObject selectablePanel;
     [SerializeField] GameObject guardianPanel;

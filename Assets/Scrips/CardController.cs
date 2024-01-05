@@ -76,6 +76,10 @@ public class CardController : MonoBehaviour
         gameManager.ReduceManaCost(model.cost, model.isPlayerCard);
         // フィールドカードに設定
         model.isFieldCard = true;
+        // サイズの変更（縮小）
+        transform.localScale = new Vector2(0.75f, 0.75f);
+        
+
         // 基本アビリティの確認（クイック）
         if (model.isBaseAbility(BASE_ABILITY.QUICK))
         {
