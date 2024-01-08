@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour
 
     // シングルトン化（どこからでもアクセスを可能にする）
     public static GameManager instance;
-    
     private void Awake()
     {
         if(instance == null) 
@@ -44,7 +43,9 @@ public class GameManager : MonoBehaviour
         StartGame();
     }
 
-    // 試合開始
+    /// <summary>
+    ///  試合開始
+    /// </summary>
     void StartGame()
     {
         // リザルト画面を隠す
@@ -52,7 +53,7 @@ public class GameManager : MonoBehaviour
 
         // プレイヤーの初期化
         player.Init(new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9});
-        enemy.Init(new List<int> {0, 1, 2, 3, 4, 5, 8, 9});
+        enemy.Init(new List<int> {0, 1, 2, 3, 4, 6, 5, 8, 9});
 
         // ヒーローの初期体力
         uiManager.ShowHeroHp(player.heroHp, enemy.heroHp);
@@ -88,7 +89,9 @@ public class GameManager : MonoBehaviour
         uiManager.ShowManaCost(player.baseManaCost, player.manaCost, enemy.baseManaCost, enemy.manaCost);
     }
 
-    // 試合再開
+    /// <summary>
+    ///  試合のリセット
+    /// </summary>
     public void Restart()
     {
         // handとFiledのカードを削除
@@ -112,7 +115,9 @@ public class GameManager : MonoBehaviour
         StartGame();
     }
 
-    // 手札を配る
+    /// <summary>
+    ///  手札を配る
+    /// </summary>
     void SettingInitHand()
     {
         for(int i = 0; i < 3; i++) {
@@ -130,8 +135,12 @@ public class GameManager : MonoBehaviour
     {
         if (deck.Count == 0)
         {
+            // TODO：デッキアウトは負け
             return;
         }
+
+        // TODO：カードドローイベント
+        
         int cardID = deck[0];
         deck.RemoveAt(0);
         CreateCard(cardID, hand);
@@ -146,6 +155,10 @@ public class GameManager : MonoBehaviour
     {
         // カードコントローラの実体化（オブジェクト, 親要素, 相対値）
         CardController card = Instantiate(cardPerfab, hand, false);
+
+        // サイズの変更（縮小）
+        card.transform.localScale = new Vector2(0.75f, 0.75f);
+
         // 生成されたカードの持ち主を設定
         if (hand.name == "PlayerHand")
         {
@@ -158,11 +171,23 @@ public class GameManager : MonoBehaviour
 
     }
 
-    // ターン処理
+    /// <summary>
+    ///  ターン切り替え
+    /// </summary>
     void TurnCalc()
     {
         // コルーチン全停止
         StopAllCoroutines();
+
+        // TODO：ターン切り替えアニメーション表示
+
+        // TODO：ターン開始イベント
+        CardController[] cards = GetFriendFieldCards(isPlayerTurn);
+        foreach(CardController card in cards) 
+        {
+            card.TriggerTurnStartEvent();
+        }
+
         // カウントダウンタイマーON
         StartCoroutine(CountDown());
         if (isPlayerTurn) 
@@ -175,7 +200,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // カウントダウンタイマー
+    /// <summary>
+    /// カウントダウンタイマー
+    /// </summary>
     IEnumerator CountDown()
     {
         // タイムリセット
@@ -190,6 +217,9 @@ public class GameManager : MonoBehaviour
             timeCount--;
             uiManager.UpdateTime(timeCount);
         }
+
+        // TODO：ドラッグしているカードをもとの位置に戻す
+
         CangeTurn();
     }
 
@@ -227,7 +257,9 @@ public class GameManager : MonoBehaviour
         }
 
     }
-
+    /// <summary>
+    ///  ターンエンドボタン押下
+    /// </summary>
     public void OnClickTurnEndButton()
     {
         if (isPlayerTurn)
@@ -241,6 +273,8 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void CangeTurn()
     {
+        // TODO：ターン終了イベント
+
         // ターン切り替え
         isPlayerTurn = !isPlayerTurn;
         // ボタンの活性非活性
@@ -291,9 +325,15 @@ public class GameManager : MonoBehaviour
         SettingCanAttackView(playerFieldCardList, true);
     }
 
-    // カードの対戦
+    /// <summary>
+    /// カード交戦処理
+    /// </summary>
+    /// <param name="attacker"></param>
+    /// <param name="defender"></param>
     public void CardsBattle(CardController attacker, CardController defender)
     {
+        // TODO：ユニット交戦イベント
+
         // 対戦開始
         Debug.Log($"attacker:{attacker.model.hp} / defender:{defender.model.hp}");
         attacker.Attack(attacker);
@@ -301,12 +341,20 @@ public class GameManager : MonoBehaviour
         Debug.Log($"attacker:{attacker.model.hp} / defender:{defender.model.hp}");
         // 結果反映
         attacker.CheckAlive();
+
+        // TODO：リワード判定
+
         defender.CheckAlive();
     }
 
-    // Heroへの攻撃
+    /// <summary>
+    /// Heroへの攻撃
+    /// </summary>
+    /// <param name="attacker"></param>
     public void AttackToHero(CardController attacker)
     {
+        // TODO：プレイヤー攻撃イベント
+
         if (attacker.model.isPlayerCard)
         {
             enemy.heroHp -= attacker.model.at;
@@ -319,7 +367,10 @@ public class GameManager : MonoBehaviour
         uiManager.ShowHeroHp(player.heroHp, enemy.heroHp);
     }    
 
-    // Heroへの回復
+    /// <summary>
+    /// Heroへの回復
+    /// </summary>
+    /// <param name="healer"></param>//  
     public void HealToHero(CardController healer)
     {
         if (healer.model.isPlayerCard)
@@ -333,7 +384,9 @@ public class GameManager : MonoBehaviour
         uiManager.ShowHeroHp(player.heroHp, enemy.heroHp);
     } 
 
-    // 勝敗判定
+    /// <summary>
+    /// 勝敗判定
+    /// </summary>
     public void CheckHeroHP()
     {
         if (player.heroHp <= 0 || enemy.heroHp <= 0)
@@ -342,10 +395,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-/// <summary>
-/// リザルト画面の表示
-/// </summary>
-/// <param name="heroHp"></param> 
+    /// <summary>
+    /// リザルト画面の表示
+    /// </summary>
+    /// <param name="heroHp"></param> 
     void ShowResultPanel(int heroHp)
     {
         StopAllCoroutines();

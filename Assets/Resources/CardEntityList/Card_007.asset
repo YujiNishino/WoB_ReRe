@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94ed373cd639a148a6a5a9bc552fd08, type: 3}
   m_Name: Card_007
   m_EditorClassIdentifier: 
+  id: 7
   name: "\u30B9\u30DA\u30EB_\u30AB\u30FC\u30C9\u56DE\u5FA9"
   hp: 3
   at: 5

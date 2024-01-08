@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using UnityEngine;
 
 // カードデータとその処理
 public class CardModel
 {
+    public int id;
     public string name;
     public int hp;
     public int at;
@@ -21,9 +23,9 @@ public class CardModel
 
     public CardModel (int cardID, bool isPlayer) 
     {
-        string path = "CardEntityList/Card_";        
-        string id = cardID.ToString().PadLeft(3, '0');
-        CardEntity cardEntity = Resources.Load<CardEntity>(path+id);
+        id = cardID;
+        string path = "CardEntityList/Card_" + cardID.ToString().PadLeft(3, '0');
+        CardEntity cardEntity = Resources.Load<CardEntity>(path);
         name = cardEntity.name;
         hp = cardEntity.hp;
         at = cardEntity.at;

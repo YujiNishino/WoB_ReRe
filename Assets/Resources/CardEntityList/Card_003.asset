@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94ed373cd639a148a6a5a9bc552fd08, type: 3}
   m_Name: Card_003
   m_EditorClassIdentifier: 
+  id: 3
   name: 003
   hp: 3
   at: 2
   cost: 4
   icon: {fileID: 21300000, guid: d98fbe17966d8ef449b25b99024bf36f, type: 3}
   baseAbility: 0000000001000000
+  spell: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using DG.Tweening;
+using Unity.VisualScripting;
 
 /// <summary>
 /// カードオブジェクトに付与されるスクリプト：カードの移動処理
@@ -36,28 +37,30 @@ public class CardMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
         // カードコストとPlayerコストを比較
         card = GetComponent<CardController>();
 
+        // カードを操作できるか確認
         if (GameManager.instance.isPlayerTurn && !card.model.isFieldCard && card.model.cost <= GameManager.instance.player.manaCost)
         {
-            // 手札 かつ Playerコスト以下のカード
+            // 【OK】手札 かつ Playerコスト以下のカード
             isDragable = true;
             handIndex = transform.GetSiblingIndex();
         }
         else if (GameManager.instance.isPlayerTurn && card.model.isFieldCard && card.model.canAttack)
         {
-            // フィールドカード かつ アタック可能カード            
+            // 【OK】フィールドカード かつ アタック可能カード            
             isDragable = true;
         }        
         else
         {
+            // 【NG】相手のターン、相手のカード、攻撃済みカード、コスト以上のカードなど
             isDragable = false;
         }
+        // カードを操作ができない場合はドラッグ情報を空にする
         if (!isDragable)
         {
-            // ドラッグ情報を空にする
             eventData.pointerDrag = null;
             return;
         }
-
+        // カードを操作できる場合
         if (!card.model.isFieldCard) 
         {   
             // 自身の親を取得する（出発点を記憶）
@@ -70,6 +73,9 @@ public class CardMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
             // 場の場合：ラインによる操作（攻撃、起動）
             linedraw.StartPosition(transform.position);            
         }
+
+        // カードサイズを１倍
+        transform.localScale = new Vector2(1.00f, 1.00f);  
         
         // Raycasts：指定した場所から透明な光線を打ち、光線に当たったオブジェクトの情報を取得する
         // 光線に当たったオブジェクトの情報を取得をブロックしない
@@ -118,6 +124,9 @@ public class CardMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
                 linedraw.lineRenderer.gameObject.SetActive(false);                 
             }            
         }
+
+        // カードサイズを１倍
+        transform.localScale = new Vector2(0.75f, 0.75f);  
 
         // 光線に当たったオブジェクトの情報を取得をブロックする
         GetComponent<CanvasGroup>().blocksRaycasts = true;

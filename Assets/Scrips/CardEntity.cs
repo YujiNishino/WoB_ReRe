@@ -6,6 +6,7 @@ using UnityEngine;
 // カード基底クラス
 public class CardEntity :ScriptableObject
 {
+    public int id;
     public new string name;
     public int hp;
     public int at;
@@ -14,6 +15,7 @@ public class CardEntity :ScriptableObject
     public BASE_ABILITY[] baseAbility;
     public SPELL spell;
 }
+
 // 基本アビリティ
 public enum BASE_ABILITY
 {
